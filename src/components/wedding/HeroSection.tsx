@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { WEDDING_CONFIG } from "@/lib/constants";
-import coupleHero from "@/assets/4.jpg";
 import CountdownTimer from "./CountdownTimer";
 
 export const HeroSection = () => {
@@ -48,8 +47,9 @@ export const HeroSection = () => {
         >
           <div className="relative h-72 w-72 overflow-hidden rounded-full border-4 border-accent/30 shadow-xl md:h-80 md:w-80">
             <img
-              src={coupleHero}
+              src="/4.jpg"
               alt="Husain & Anti"
+              loading="eager"
               className="h-full w-full object-cover"
             />
           </div>

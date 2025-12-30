@@ -1,7 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "react-router-dom";
 import { WEDDING_CONFIG } from "@/lib/constants";
-import coupleHero from "@/assets/13.jpg";
 
 interface OpeningModalProps {
   isOpen: boolean;
@@ -30,8 +29,9 @@ export const OpeningModal = ({ isOpen, onOpen }: OpeningModalProps) => {
           {/* Background Image with Overlay */}
           <div className="absolute inset-0">
             <img
-              src={coupleHero}
+              src="/13.jpg"
               alt="Couple"
+              loading="eager"
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-foreground/40 via-foreground/50 to-foreground/70" />

@@ -1,29 +1,20 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import gallery1 from "@/assets/1.jpg";
-import gallery2 from "@/assets/2.jpg";
-import gallery3 from "@/assets/3.jpg";
-import gallery4 from "@/assets/4.jpg";
-import gallery5 from "@/assets/5.jpg";
-import gallery6 from "@/assets/6.jpg";
-import gallery7 from "@/assets/7.jpg";
-import gallery8 from "@/assets/8.jpg";
-import gallery9 from "@/assets/9.jpg";
-import gallery10 from "@/assets/10.jpg";
 import { SectionReveal } from "./SectionReveal";
 
+// Use path strings instead of imports for better code splitting
 const galleryImages = [
-  { id: 1, src: gallery1, alt: "Couple photo 1" },
-  { id: 2, src: gallery2, alt: "Couple photo 2" },
-  { id: 3, src: gallery3, alt: "Couple photo 3" },
-  { id: 4, src: gallery4, alt: "Couple photo 4" },
-  { id: 5, src: gallery5, alt: "Couple photo 5" },
-  { id: 6, src: gallery6, alt: "Couple photo 6" },
-  { id: 7, src: gallery7, alt: "Couple photo 7" },
-  { id: 8, src: gallery8, alt: "Couple photo 8" },
-  { id: 9, src: gallery9, alt: "Couple photo 9" },
-  { id: 10, src: gallery10, alt: "Couple photo 10" },
+  { id: 1, src: "/1.jpg", alt: "Couple photo 1" },
+  { id: 2, src: "/2.jpg", alt: "Couple photo 2" },
+  { id: 3, src: "/3.jpg", alt: "Couple photo 3" },
+  { id: 4, src: "/4.jpg", alt: "Couple photo 4" },
+  { id: 5, src: "/5.jpg", alt: "Couple photo 5" },
+  { id: 6, src: "/6.jpg", alt: "Couple photo 6" },
+  { id: 7, src: "/7.jpg", alt: "Couple photo 7" },
+  { id: 8, src: "/8.jpg", alt: "Couple photo 8" },
+  { id: 9, src: "/9.jpg", alt: "Couple photo 9" },
+  { id: 10, src: "/10.jpg", alt: "Couple photo 10" },
 ];
 
 export const GallerySection = () => {
@@ -89,6 +80,7 @@ export const GallerySection = () => {
                   <motion.img
                     src={image.src}
                     alt={image.alt}
+                    loading="lazy"
                     className="h-full w-full cursor-pointer object-cover transition-transform duration-500 hover:scale-110"
                     onClick={() => setSelectedImage(image.id)}
                     whileHover={{ scale: 1.05 }}

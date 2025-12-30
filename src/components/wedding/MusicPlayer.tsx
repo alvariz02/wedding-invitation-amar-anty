@@ -1,7 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Music, Music2 } from "lucide-react";
-import weddingMusic from "@/assets/Tiara Andini, Arsy Widianto - Lagu Pernikahan Kita [ZeFpigRaXbI].mp3";
 
 export const MusicPlayer = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -49,8 +48,8 @@ export const MusicPlayer = () => {
       <audio
         ref={audioRef}
         loop
-        preload="auto"
-        src={weddingMusic}
+        preload="metadata"
+        src="/Tiara Andini, Arsy Widianto - Lagu Pernikahan Kita [ZeFpigRaXbI].mp3"
       />
 
       {/* Floating Music Button */}

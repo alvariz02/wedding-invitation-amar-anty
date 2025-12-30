@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { Instagram } from "lucide-react";
 import { WEDDING_CONFIG } from "@/lib/constants";
-import groomImage from "@/assets/soloman.jpg";
-import brideImage from "@/assets/solowoman.jpg";
 import { SectionReveal } from "./SectionReveal";
 
 export const CoupleSection = () => {
@@ -45,8 +43,9 @@ export const CoupleSection = () => {
             <div className="relative mb-6">
               <div className="h-48 w-48 overflow-hidden rounded-full border-4 border-accent/30 shadow-lg">
                 <img
-                  src={groomImage}
+                  src={WEDDING_CONFIG.couple.groom.photo}
                   alt={WEDDING_CONFIG.couple.groom.fullName}
+                  loading="lazy"
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -100,8 +99,9 @@ export const CoupleSection = () => {
             <div className="relative mb-6">
               <div className="h-48 w-48 overflow-hidden rounded-full border-4 border-accent/30 shadow-lg">
                 <img
-                  src={brideImage}
+                  src={WEDDING_CONFIG.couple.bride.photo}
                   alt={WEDDING_CONFIG.couple.bride.fullName}
+                  loading="lazy"
                   className="h-full w-full object-cover"
                 />
               </div>

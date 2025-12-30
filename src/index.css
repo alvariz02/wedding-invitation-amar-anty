@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Wedding Invitation Design System - Pink & Romantic Theme */
+
+@layer base {
+  :root {
+    /* Pink Romantic Theme */
+    --background: 340 30% 96%;
+    --foreground: 340 40% 15%;
+
+    --card: 340 25% 98%;
+    --card-foreground: 340 40% 15%;
+
+    --popover: 340 25% 98%;
+    --popover-foreground: 340 40% 15%;
+
+    /* Pink Primary */
+    --primary: 330 55% 65%;
+    --primary-foreground: 340 30% 98%;
+
+    /* Deep Pink Secondary */
+    --secondary: 330 50% 40%;
+    --secondary-foreground: 340 30% 98%;
+
+    /* Soft Pink Muted */
+    --muted: 340 20% 88%;
+    --muted-foreground: 340 30% 45%;
+
+    /* Rose Gold Accent */
+    --accent: 350 60% 55%;
+    --accent-foreground: 340 30% 98%;
+
+    --destructive: 0 72% 50%;
+    --destructive-foreground: 0 85% 97%;
+
+    --border: 340 25% 85%;
+    --input: 340 25% 85%;
+    --ring: 330 55% 65%;
+
+    --radius: 0.75rem;
+
+    /* Custom Wedding Colors */
+    --sage: 330 55% 65%;
+    --sage-light: 330 40% 80%;
+    --sage-dark: 330 60% 45%;
+    --gold: 350 60% 55%;
+    --gold-light: 350 50% 75%;
+    --gold-dark: 350 65% 40%;
+    --cream: 340 35% 97%;
+    --ivory: 340 30% 96%;
+    --forest: 330 50% 40%;
+
+    /* Gradients */
+    --gradient-sage: linear-gradient(135deg, hsl(330 55% 65%), hsl(330 60% 55%));
+    --gradient-gold: linear-gradient(135deg, hsl(350 60% 55%), hsl(350 65% 60%));
+    --gradient-nature: linear-gradient(180deg, hsl(340 30% 96%), hsl(330 40% 92%));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px hsl(330 40% 50% / 0.1);
+    --shadow-gold: 0 4px 20px hsl(350 60% 55% / 0.2);
+    --shadow-sage: 0 4px 20px hsl(330 55% 65% / 0.15);
+
+    /* Font Families */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+
+    /* Chart Colors */
+    --chart-1: 330 55% 65%;
+    --chart-2: 350 60% 55%;
+    --chart-3: 340 20% 88%;
+    --chart-4: 330 50% 40%;
+    --chart-5: 330 40% 80%;
+
+    /* Sidebar */
+    --sidebar-background: 340 30% 96%;
+    --sidebar-foreground: 340 40% 15%;
+    --sidebar-primary: 330 55% 65%;
+    --sidebar-primary-foreground: 340 30% 98%;
+    --sidebar-accent: 350 60% 55%;
+    --sidebar-accent-foreground: 340 30% 98%;
+    --sidebar-border: 340 25% 85%;
+    --sidebar-ring: 330 55% 65%;
+  }
+
+  .dark {
+    --background: 340 40% 12%;
+    --foreground: 340 25% 95%;
+
+    --card: 340 35% 18%;
+    --card-foreground: 340 25% 95%;
+
+    --popover: 340 35% 18%;
+    --popover-foreground: 340 25% 95%;
+
+    --primary: 330 60% 70%;
+    --primary-foreground: 340 40% 12%;
+
+    --secondary: 330 50% 60%;
+    --secondary-foreground: 340 40% 12%;
+
+    --muted: 340 30% 28%;
+    --muted-foreground: 340 20% 75%;
+
+    --accent: 350 55% 60%;
+    --accent-foreground: 340 25% 95%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 85% 97%;
+
+    --border: 340 30% 28%;
+    --input: 340 30% 28%;
+    --ring: 330 60% 70%;
+
+    --sage: 330 60% 70%;
+    --sage-light: 330 55% 75%;
+    --sage-dark: 330 65% 50%;
+    --gold: 350 55% 60%;
+    --gold-light: 350 50% 70%;
+    --gold-dark: 350 60% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .text-sage {
+    color: hsl(var(--sage));
+  }
+
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  .bg-sage {
+    background-color: hsl(var(--sage));
+  }
+
+  .bg-gold {
+    background-color: hsl(var(--gold));
+  }
+
+  .bg-cream {
+    background-color: hsl(var(--cream));
+  }
+
+  .bg-ivory {
+    background-color: hsl(var(--ivory));
+  }
+
+  .border-gold {
+    border-color: hsl(var(--gold));
+  }
+
+  .border-sage {
+    border-color: hsl(var(--sage));
+  }
+
+  .gradient-sage {
+    background: var(--gradient-sage);
+  }
+
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .gradient-nature {
+    background: var(--gradient-nature);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .shadow-sage {
+    box-shadow: var(--shadow-sage);
+  }
+
+  /* Decorative Elements */
+  .ornament-line {
+    @apply h-px w-16 bg-gradient-to-r from-transparent via-accent to-transparent;
+  }
+
+  .ornament-divider {
+    @apply flex items-center justify-center gap-4;
+  }
+
+  .ornament-divider::before,
+  .ornament-divider::after {
+    content: '';
+    @apply h-px flex-1 max-w-24;
+    background: linear-gradient(90deg, transparent, hsl(var(--sage)), transparent);
+  }
+
+  /* Card Styles */
+  .wedding-card {
+    @apply bg-card rounded-xl p-6 shadow-soft border border-border/50;
+    background: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--cream)) 100%);
+  }
+
+  /* Button Styles */
+  .btn-wedding {
+    @apply px-8 py-3 rounded-full font-medium transition-all duration-300;
+    @apply bg-primary text-primary-foreground;
+    @apply hover:scale-105 hover:shadow-lg;
+  }
+
+  .btn-wedding-outline {
+    @apply px-8 py-3 rounded-full font-medium transition-all duration-300;
+    @apply border-2 border-gold text-gold bg-transparent;
+    @apply hover:bg-gold hover:text-primary-foreground hover:scale-105;
+  }
+
+  .btn-gold {
+    @apply px-6 py-2 rounded-full font-medium transition-all duration-300;
+    @apply bg-accent text-accent-foreground;
+    @apply hover:scale-105 hover:shadow-gold;
+  }
+}
+
+@layer utilities {
+  /* Scrollbar Styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--sage));
+    border-radius: 3px;
+  }
+
+  /* Selection */
+  ::selection {
+    background: hsl(var(--sage) / 0.3);
+    color: hsl(var(--foreground));
+  }
+}

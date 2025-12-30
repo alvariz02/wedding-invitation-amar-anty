@@ -76,7 +76,7 @@ const Index = () => {
     <>
       <Helmet>
         <html lang="id" />
-        <title>Husain & Anti Wedding | {WEDDING_CONFIG.event.displayDate}</title>
+        <title>Amar & Anty Wedding | {WEDDING_CONFIG.event.displayDate}</title>
         <meta
           name="description"
           content={`Kami mengundang Anda untuk merayakan pernikahan ${WEDDING_CONFIG.couple.groom.name} & ${WEDDING_CONFIG.couple.bride.name} pada ${WEDDING_CONFIG.event.displayDate} di Desa pangeo/liate, Kec. Morotai Jaya, Kab. Pulau Morotai`}
@@ -85,13 +85,13 @@ const Index = () => {
           name="keywords"
           content="undangan pernikahan, wedding invitation, Husain Ishak, Januanti M. Siri, pernikahan, wedding, Morotai, akad nikah, resepsi"
         />
-        <meta name="author" content="Husain & Anti" />
+        <meta name="author" content="Amar & Anty" />
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#d4a574" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={`Husain & Anti Wedding | ${WEDDING_CONFIG.event.displayDate}`} />
+        <meta property="og:title" content={`Amar & Anty Wedding | ${WEDDING_CONFIG.event.displayDate}`} />
         <meta
           property="og:description"
           content={`Kami mengundang Anda untuk merayakan pernikahan ${WEDDING_CONFIG.couple.groom.name} & ${WEDDING_CONFIG.couple.bride.name} pada ${WEDDING_CONFIG.event.displayDate}`}
@@ -99,19 +99,19 @@ const Index = () => {
         <meta property="og:image" content="/4.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Husain & Anti Wedding" />
-        <meta property="og:site_name" content="Husain & Anti Wedding" />
+        <meta property="og:image:alt" content="Amar & Anty Wedding" />
+        <meta property="og:site_name" content="Amar & Anty Wedding" />
         <meta property="og:locale" content="id_ID" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`Husain & Anti Wedding | ${WEDDING_CONFIG.event.displayDate}`} />
+        <meta name="twitter:title" content={`Amar & Anty Wedding | ${WEDDING_CONFIG.event.displayDate}`} />
         <meta
           name="twitter:description"
           content={`Kami mengundang Anda untuk merayakan pernikahan ${WEDDING_CONFIG.couple.groom.name} & ${WEDDING_CONFIG.couple.bride.name} pada ${WEDDING_CONFIG.event.displayDate}`}
         />
         <meta name="twitter:image" content="/4.jpg" />
-        <meta name="twitter:image:alt" content="Husain & Anti Wedding" />
+        <meta name="twitter:image:alt" content="Amar & Anty Wedding" />
         
         {/* Favicon */}
         <link rel="icon" type="image/jpeg" href="/4.jpg" />

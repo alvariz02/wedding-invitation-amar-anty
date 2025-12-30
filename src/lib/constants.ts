@@ -5,14 +5,14 @@ export const WEDDING_CONFIG = {
   // Couple Information
   couple: {
     groom: {
-      name: "Husain",
+      name: "Amar",
       fullName: "Husain Ishak. S.Ap",
       parents: "Putra Pertama Alm Bpk. Marikar Ishak & ibu. Nisa Boke",
       instagram: "https://instagram.com/husain",
       photo: "/soloman.jpg", // Replace with actual photo
     },
     bride: {
-      name: "Anti",
+      name: "Anty",
       fullName: "Januanti M. Siri S.Pd", 
       parents: "Putri kelima dari Alm Bpk. Edi M. Siri & Ibu. Maryam Puni",
       instagram: "https://instagram.com/januanti",
@@ -52,13 +52,11 @@ export const WEDDING_CONFIG = {
   // Invited Guests
   invitedGuests: {
     bride: [
-      "Yules Puni",
       "Kel. Besar M. siri",
       "Kel. Besar Puni",
       "Kel. Besar Martora",
     ],
     groom: [
-      "Hj. Jamalia Dano kader",
       "Kel. Besar Ishak",
       "Kel. Besar Boke",
       "Kel. Besar Dano Kader",

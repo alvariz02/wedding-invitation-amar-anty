@@ -14,7 +14,7 @@ export const WEDDING_CONFIG = {
     bride: {
       name: "Anty",
       fullName: "Januanti M. Siri S.Pd", 
-      parents: "Putri kelima dari Alm Bpk. Edi M. Siri & Ibu. Maryam Puni",
+      parents: "Putri kelima dari Bpk. Edi M. Siri & Ibu. Maryam Puni",
       instagram: "https://instagram.com/januanti",
       photo: "/solowoman.jpg", // Replace with actual photo
     },

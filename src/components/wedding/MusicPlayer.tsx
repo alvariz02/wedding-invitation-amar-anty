@@ -22,6 +22,7 @@ export const MusicPlayer = () => {
 
   const startMusic = () => {
     if (audioRef.current && !hasInteracted) {
+      audioRef.current.currentTime = 49; // Start from 49 seconds
       audioRef.current.play().catch(() => {
         // Autoplay blocked
       });
@@ -49,7 +50,7 @@ export const MusicPlayer = () => {
         ref={audioRef}
         loop
         preload="metadata"
-        src="/Tiara Andini, Arsy Widianto - Lagu Pernikahan Kita [ZeFpigRaXbI].mp3"
+        src="/Tiara Andini, Arsy Widianto - Lagu Pernikahan Kita [ZeFpigRaXbI].mp3#t=49"
       />
 
       {/* Floating Music Button */}
